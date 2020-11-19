@@ -1,6 +1,6 @@
 # pzn_app
 
-A new Flutter application.
+App for PZN Wiesloch
 
 ## Getting Started
 
