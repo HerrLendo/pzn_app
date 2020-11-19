@@ -53,7 +53,7 @@ class HospitalPage extends StatelessWidget {
                   color: Colors.yellow[700]
               ),
               child: Center(
-                  child: Text('Krankenhäuser', style: TextStyle(
+                  child: Text('Kranken', style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 40
