@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "924996008086",
+    "firebase_url": "https://pzn-testing.firebaseio.com",
+    "project_id": "pzn-testing",
+    "storage_bucket": "pzn-testing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924996008086:android:a11b8c0d93375eb2496ab7",
+        "android_client_info": {
+          "package_name": "eu.faithlux.pzn_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924996008086-oe9jcbbkekghi650eh0nf7c5qv2tjp92.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVqWm-w48ul4i8xlyIqt0QljKM34_-Yh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924996008086-oe9jcbbkekghi650eh0nf7c5qv2tjp92.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
