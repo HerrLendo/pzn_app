@@ -4,8 +4,6 @@ import 'package:pzn_app/corona_alert-item.dart';
 import 'package:pzn_app/item.dart';
 import 'package:pzn_app/posts.dart';
 
-import 'zfp_wiesloch.dart';
-
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -27,16 +25,16 @@ class HomePage extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: SizedBox(
               child: Card(
-                color: Colors.grey[900],
+                color: Colors.yellow[600],
                 elevation: 5,
                 child: InkWell(
-                  onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => zfp()))},
+                  onTap: (){},
                   child: Center(
                     child: Column(
                       children: <Widget>[
                         Padding(padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
                           child: Center(
-                            child: Icon(Icons.place, size: 130, color: Colors.yellow[600],),
+                            child: Icon(Icons.place, size: 130,),
                           ),
                         ),
                         Padding(padding: EdgeInsets.all(8.0),
@@ -58,7 +56,7 @@ class HomePage extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: SizedBox(
               child: Card(
-                color: Colors.grey[900],
+                color: Colors.yellow[600],
                 elevation: 5,
                 child: InkWell(
                   onTap: (){},
@@ -67,7 +65,7 @@ class HomePage extends StatelessWidget {
                       children: <Widget>[
                         Padding(padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
                           child: Center(
-                            child: Icon(Icons.local_offer_outlined, size: 130, color: Colors.yellow[600]),
+                            child: Icon(Icons.local_offer_outlined, size: 130,),
                           ),
                         ),
                         Padding(padding: EdgeInsets.all(8.0),
@@ -89,16 +87,16 @@ class HomePage extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: SizedBox(
               child: Card(
-                color: Colors.grey[900],
+                color: Colors.yellow[600],
                 elevation: 5,
                 child: InkWell(
-                  onTap: () => {},
+                  onTap: (){},
                   child: Center(
                     child: Column(
                       children: <Widget>[
                         Padding(padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
                           child: Center(
-                            child: Icon(Icons.group_add, size: 130, color: Colors.yellow[600],),
+                            child: Icon(Icons.group_add, size: 130,),
                           ),
                         ),
                         Padding(padding: EdgeInsets.all(8.0),
