@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pzn_app/corona_alert-item.dart';
-import 'package:pzn_app/zfp_wiesloch.dart';
+import 'package:pzn_app/pzn_offers.dart';
+import 'package:pzn_app/pzn_wiesloch.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -27,7 +28,7 @@ class HomePage extends StatelessWidget {
                 color: Colors.grey[900],
                 elevation: 5,
                 child: InkWell(
-                  onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => zfp()))},
+                  onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => pzn()))},
                   child: Center(
                     child: Column(
                       children: <Widget>[
@@ -58,7 +59,7 @@ class HomePage extends StatelessWidget {
                 color: Colors.grey[900],
                 elevation: 5,
                 child: InkWell(
-                  onTap: (){},
+                  onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => pzn_offers()))},
                   child: Center(
                     child: Column(
                       children: <Widget>[

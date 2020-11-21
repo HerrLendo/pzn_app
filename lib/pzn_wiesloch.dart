@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class zfp extends StatelessWidget {
+class pzn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,13 +23,13 @@ class zfp extends StatelessWidget {
           ),
         ],
       ),
-      body: zfp_page(),
+      body: pzn_page(),
     );
   }
 }
 
 
-class zfp_page extends StatelessWidget {
+class pzn_page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +47,7 @@ class zfp_page extends StatelessWidget {
                   color: Colors.yellow[700]
               ),
               child: Center(
-                  child: Text('Einstellungen', style: TextStyle(
+                  child: Text('Unser Zentrum', style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 40
