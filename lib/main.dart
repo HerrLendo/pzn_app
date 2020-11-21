@@ -1,16 +1,10 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:pzn_app/NavDrawer.dart';
 import 'package:pzn_app/home_screen.dart';
-
-import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/services.dart';
-import 'package:pzn_app/hospitals.dart';
 import 'package:pzn_app/posts.dart';
-import 'package:pzn_app/settings.dart';
-
-import 'corona-virus.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -83,14 +77,6 @@ class MyApp extends StatelessWidget {
           drawer: NavDrawer(),
           appBar: AppBar(
             actions: <Widget>[
-              IconButton(
-                icon: Icon(Icons.add_alert, color: Colors.white,),
-                onPressed: (){},
-              ),
-              IconButton(
-                icon: Icon(Icons.verified, color: Colors.green,),
-                onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => CoronaVirus()))},
-              ),
             ],
             title: Text('zfp', style: TextStyle(
               fontWeight: FontWeight.bold,
