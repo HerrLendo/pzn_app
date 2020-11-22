@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pzn_app/corona_alert-item.dart';
+import 'package:pzn_app/hospitals.dart';
 import 'package:pzn_app/pzn_offers.dart';
 import 'package:pzn_app/pzn_wiesloch.dart';
 
@@ -90,17 +91,48 @@ class HomePage extends StatelessWidget {
                 color: Colors.grey[900],
                 elevation: 5,
                 child: InkWell(
-                  onTap: (){},
+                  onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Hospitals()))},
                   child: Center(
                     child: Column(
                       children: <Widget>[
                         Padding(padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
                           child: Center(
-                            child: Icon(Icons.group_add, size: 130, color: Colors.yellow[600],),
+                            child: Icon(Icons.local_hospital, size: 130, color: Colors.yellow[600],),
                           ),
                         ),
                         Padding(padding: EdgeInsets.all(8.0),
-                          child: Text('Karriere', style: TextStyle(
+                          child: Text('Standorte', style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white
+                          ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(
+              child: Card(
+                color: Colors.grey[900],
+                elevation: 5,
+                child: InkWell(
+                  onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Hospitals()))},
+                  child: Center(
+                    child: Column(
+                      children: <Widget>[
+                        Padding(padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
+                          child: Center(
+                            child: Icon(Icons.search, size: 130, color: Colors.yellow[600],),
+                          ),
+                        ),
+                        Padding(padding: EdgeInsets.all(8.0),
+                          child: Text('Fachgebiete', style: TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.bold,
                               color: Colors.white
