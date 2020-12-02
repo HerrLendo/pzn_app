@@ -2,9 +2,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:pzn_app/NavDrawer.dart';
-import 'package:pzn_app/home_screen.dart';
-import 'package:pzn_app/posts.dart';
+import 'package:pzn_app/ui/screens/posttest.dart';
+
+import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/home_screen.dart';
+import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/widgets/NavDrawer.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -102,7 +103,7 @@ class MyApp extends StatelessWidget {
           body: TabBarView(
             children: [
               HomePage(),
-              PostList(),
+              LandingPage()
             ],
           ),
         ),

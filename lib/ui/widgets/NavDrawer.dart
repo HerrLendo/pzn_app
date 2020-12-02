@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:pzn_app/Contact.dart';
-import 'package:pzn_app/area.dart';
-import 'package:pzn_app/corona-virus.dart';
-import 'package:pzn_app/developer-tools.dart';
-import 'package:pzn_app/hospitals.dart';
-import 'package:pzn_app/settings.dart';
+
+import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/Contact.dart';
+import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/area.dart';
+import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/corona-virus.dart';
+import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/developer-tools.dart';
+import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/hospitals.dart';
+import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/settings.dart';
 
 
 class NavDrawer extends StatelessWidget {

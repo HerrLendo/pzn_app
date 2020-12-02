@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pzn_app/posts.dart';
 
-class Developer extends StatelessWidget {
+class Contact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,14 +28,12 @@ class Developer extends StatelessWidget {
           ),
         ],
       ),
-      body: DeveloperPage(),
     );
   }
 }
 
 
-
-class DeveloperPage extends StatelessWidget {
+class ContactPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,7 +51,7 @@ class DeveloperPage extends StatelessWidget {
                   color: Colors.yellow[700]
               ),
               child: Center(
-                  child: Text('Developer-Tools', style: TextStyle(
+                  child: Text('Kontakt', style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 40
@@ -62,12 +59,9 @@ class DeveloperPage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
-            height: 700,
-            child: PostList(),
-          ),
         ],
       ),
     );
   }
 }
+
