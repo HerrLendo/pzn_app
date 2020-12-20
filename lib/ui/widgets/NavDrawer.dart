@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/Contact.dart';
 import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/area.dart';
 import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/corona-virus.dart';
-import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/developer-tools.dart';
 import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/hospitals.dart';
-import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/settings.dart';
 
 
 class NavDrawer extends StatelessWidget {
@@ -34,24 +32,9 @@ class NavDrawer extends StatelessWidget {
             onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Area()))},
           ),
           ListTile(
-            leading: Icon(Icons.local_hospital, size: 27,),
-            title: Text('Krankenhäuser', style: TextStyle(fontSize: 19),),
-            onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Hospitals()))},
-          ),
-          ListTile(
             leading: Icon(Icons.phone, size: 27,),
             title: Text('Kontakt', style: TextStyle(fontSize: 19),),
             onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Contact()))},
-          ),
-          ListTile(
-            leading: Icon(Icons.settings, size: 27,),
-            title: Text('Einstellungen', style: TextStyle(fontSize: 19),),
-            onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Settings()))},
-          ),
-          ListTile(
-            leading: Icon(Icons.developer_mode, size: 27,),
-            title: Text('Developer-Tools', style: TextStyle(fontSize: 19),),
-            onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Developer()))},
           ),
         ],
       ),

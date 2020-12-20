@@ -17,17 +17,13 @@ class Contact extends StatelessWidget {
         ),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.search),
-            color: Colors.white,
-            onPressed: (){},
-          ),
-          IconButton(
             icon: Icon(Icons.more_vert),
             color: Colors.white,
             onPressed: (){},
           ),
         ],
       ),
+      body: ContactPage(),
     );
   }
 }
@@ -56,6 +52,31 @@ class ContactPage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: 40
                   ),)
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Container(
+              child: Column(
+                children: <Widget>[
+                  Text('PZN - WIESLOCH', style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),),
+                  Text('Mit insgesamt fünf Standorten gewährleistet das Psychiatrische Zentrum Nordbaden eine wohnortnahe und flächendeckende Versorgung der '
+                      'Bevölkerung. Die Zentren für Psychische Gesundheit Bruchsal, Neckar-Odenwald, Schwetzingen und Weinheim sowie der Hauptstandort in Wiesloch '
+                      'bieten eine Vielzahl von Untersuchungs- und Behandlungseinheiten und ergänzen sich zu einem umfassenden Therapieangebot für Erwachsene, die '
+                      'psychiatrischer Beratung und Betreuung bedürfen.',
+                    style: TextStyle(
+                      fontSize: 15,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Divider(),
+                  ),
+                ],
               ),
             ),
           ),
