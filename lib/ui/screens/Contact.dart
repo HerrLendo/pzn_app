@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Contact extends StatelessWidget {
+class Contact extends StatefulWidget {
+  @override
+  _ContactState createState() => _ContactState();
+}
+
+class _ContactState extends State<Contact> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,60 +34,220 @@ class Contact extends StatelessWidget {
 }
 
 
+
 class ContactPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        scrollDirection: Axis.vertical,
-        children: <Widget>[
-          ClipRRect(
-            borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(40.0),
-                bottomRight: Radius.circular(40.0)
-            ),
-            child: Container(
-              height: 100,
-              decoration: BoxDecoration(
-                  color: Colors.yellow[700]
-              ),
-              child: Center(
-                  child: Text('Kontakt', style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 40
-                  ),)
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Container(
-              child: Column(
-                children: <Widget>[
-                  Text('PZN - WIESLOCH', style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                  ),),
-                  Text('Mit insgesamt fünf Standorten gewährleistet das Psychiatrische Zentrum Nordbaden eine wohnortnahe und flächendeckende Versorgung der '
-                      'Bevölkerung. Die Zentren für Psychische Gesundheit Bruchsal, Neckar-Odenwald, Schwetzingen und Weinheim sowie der Hauptstandort in Wiesloch '
-                      'bieten eine Vielzahl von Untersuchungs- und Behandlungseinheiten und ergänzen sich zu einem umfassenden Therapieangebot für Erwachsene, die '
-                      'psychiatrischer Beratung und Betreuung bedürfen.',
-                    style: TextStyle(
-                      fontSize: 15,
-                    ),
+      body: Container(
+        child: SafeArea(
+          right: true,
+          left: true,
+          child: ListView(
+            scrollDirection: Axis.vertical,
+            children: <Widget>[
+              ClipRRect(
+                borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(40.0),
+                    bottomRight: Radius.circular(40.0)
+                ),
+                child: Container(
+                  height: 100,
+                  decoration: BoxDecoration(
+                      color: Colors.yellow[700]
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Divider(),
+                  child: Center(
+                      child: Text('Kontakt', style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 40
+                      ),)
                   ),
-                ],
+                ),
               ),
-            ),
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text('PZN - WIESLOCH', style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),),
+                      Padding(
+                          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                          child: Column(
+                            children: <Widget>[
+                              Row(
+                                children: <Widget>[
+                                  ButtonBar(
+                                    children: <Widget>[
+                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green ),
+                                      FlatButton(
+                                        onPressed: () => {},
+                                        child: Text('Adresse: Heidelberger Str. 1 · 69168 Wiesloch', style: TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 15,
+                                        ),),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ],
+                          )
+                      ),
+                      Padding(
+                          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                          child: Column(
+                            children: <Widget>[
+                              Row(
+                                children: <Widget>[
+                                  ButtonBar(
+                                    children: <Widget>[
+                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green ),
+                                      FlatButton(
+                                        onPressed: () => {},
+                                        child: Text('Telefon: 06222 550', style: TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 15,
+                                        ),),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ],
+                          )
+                      ),
+                      Padding(
+                          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                          child: Column(
+                            children: <Widget>[
+                              Row(
+                                children: <Widget>[
+                                  ButtonBar(
+                                    children: <Widget>[
+                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green ),
+                                      FlatButton(
+                                        onPressed: () => {},
+                                        child: Text('Webseite: www.pzn-wiesloch.de', style: TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 15,
+                                        ),),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ],
+                          )
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text('FAITHLUX STUDIO', style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),),
+                      Padding(
+                          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                          child: Column(
+                            children: <Widget>[
+                              Row(
+                                children: <Widget>[
+                                  ButtonBar(
+                                    children: <Widget>[
+                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green ),
+                                      FlatButton(
+                                        onPressed: () => {},
+                                        child: Text('Webseite: www.faithlux.eu', style: TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 15,
+                                        ),),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ],
+                          )
+                      ),
+                      Padding(
+                          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                          child: Column(
+                            children: <Widget>[
+                              Row(
+                                children: <Widget>[
+                                  ButtonBar(
+                                    children: <Widget>[
+                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green ),
+                                      FlatButton(
+                                        onPressed: () => {},
+                                        child: Text('E-Mail: info@faithlux.eu', style: TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 15,
+                                        ),),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                        child: Column(
+                          children: <Widget>[
+                            Row(
+                              children: <Widget>[
+                                ButtonBar(
+                                  children: <Widget>[
+                                    Icon(Icons.arrow_forward_ios_sharp, color: Colors.green ),
+                                    FlatButton(
+                                      onPressed: () => {},
+                                      child: Text('Vertreten durch: Luca-Paul Siemers', style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
+                                      ),),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      Text('Bei technischen Fragen zur App wenden Sie sich bitte an:', style: TextStyle(
+                        fontSize: 15,
+                      ),),
+                      Text('support@faithlux.eu', style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold
+                      ),),
+                    ],
+                  ),
+                ),
+              ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
 }
-

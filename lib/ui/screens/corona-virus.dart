@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
-class CoronaVirus extends StatelessWidget {
+class CoronaVirus extends StatefulWidget {
+  @override
+  _CoronaVirusState createState() => _CoronaVirusState();
+}
+
+class _CoronaVirusState extends State<CoronaVirus> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,6 +32,7 @@ class CoronaVirus extends StatelessWidget {
     );
   }
 }
+
 
 class CoronaInformation extends StatelessWidget {
   @override

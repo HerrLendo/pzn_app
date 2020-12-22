@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pzn_app/ui/screens/pzn_offers.dart';
+import 'package:pzn_app/ui/screens/pzn_wiesloch.dart';
+import 'package:pzn_app/ui/widgets/corona_alert-item.dart';
 
-import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/hospitals.dart';
-import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/pzn_offers.dart';
-import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/pzn_wiesloch.dart';
-import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/widgets/corona_alert-item.dart';
+import 'hospitals.dart';
+
+
 
 class HomePage extends StatelessWidget {
   @override

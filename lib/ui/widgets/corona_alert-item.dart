@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pzn_app/ui/screens/corona-virus.dart';
 
-import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/corona-virus.dart';
 
 class AlertItem extends StatelessWidget {
   @override
