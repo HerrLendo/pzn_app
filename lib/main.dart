@@ -2,10 +2,12 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:gradient_app_bar/gradient_app_bar.dart';
+import 'package:pzn_app/ui/screens/home_screen.dart';
 import 'package:pzn_app/ui/screens/posttest.dart';
+import 'package:pzn_app/ui/widgets/NavDrawer.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
-import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/home_screen.dart';
-import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/widgets/NavDrawer.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -76,15 +78,17 @@ class MyApp extends StatelessWidget {
         length: 2,
         child: Scaffold(
           drawer: NavDrawer(),
-          appBar: AppBar(
-            actions: <Widget>[
-            ],
+          appBar: GradientAppBar(
             title: Text('zfp', style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 25
-            ),),
+                fontWeight: FontWeight.bold,
+                fontSize: 25,
+              ),
+            ),
             centerTitle: true,
-            backgroundColor: Colors.grey[900],
+            backgroundColorStart: Colors.grey[900],
+            backgroundColorEnd: Colors.grey[900],
+            actions: [
+            ],
             bottom: TabBar(
               indicatorColor: Colors.yellow,
               unselectedLabelColor: Colors.grey[700],
@@ -103,7 +107,7 @@ class MyApp extends StatelessWidget {
           body: TabBarView(
             children: [
               HomePage(),
-              LandingPage()
+              LandingPage(),
             ],
           ),
         ),
@@ -124,4 +128,12 @@ class Home extends StatelessWidget {
       drawer: NavDrawer(),
     );
   }
+}
+
+_onBasicAlertPressed(context) {
+  Alert(
+    context: context,
+    title: "RFLUTTER ALERT",
+    desc: "Flutter is more awesome with RFlutter Alert.",
+  ).show();
 }

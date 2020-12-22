@@ -76,6 +76,12 @@ class ContactPage extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),),
                       Padding(
+                        padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0.0),
+                        child: Divider(
+                          color: Colors.black,
+                        ),
+                      ),
+                      Padding(
                           padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
                           child: Column(
                             children: <Widget>[
@@ -161,6 +167,12 @@ class ContactPage extends StatelessWidget {
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0.0),
+                        child: Divider(
+                          color: Colors.black,
+                        ),
+                      ),
                       Padding(
                           padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
                           child: Column(

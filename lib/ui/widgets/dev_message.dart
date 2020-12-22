@@ -1,39 +1,34 @@
 import 'package:flutter/material.dart';
 
-class Item extends StatelessWidget {
+
+class DevMessageItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Card(
+        elevation: 10,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget> [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Icon(
-                Icons.image,
-                size: 220,
-              ),
             ),
             const ListTile(
               leading: Icon(Icons.info_outline,
-              size: 50),
-              title: Text('Title',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
+                  size: 50, color: Colors.red),
+              title: Text('Achtung',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-              ),
-              subtitle: Text('Subtitle'),
+              subtitle: Text('Diese Seite befindet sich noch im Aufbau!',
+                  style: TextStyle(
+                      fontSize: 15.0
+                  )),
             ),
             ButtonBar(
               children: <Widget> [
-                FlatButton(
-                  child: Text(
-                    'Weiterlesen'
-                  ),
-                  onPressed: () {},
-                ),
               ],
             )
           ],

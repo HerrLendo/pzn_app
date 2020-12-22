@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:pzn_app/ui/screens/corona-virus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 
-class AlertItem extends StatelessWidget {
+class WelcomeItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -15,27 +15,22 @@ class AlertItem extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
             ),
             const ListTile(
-              leading: Icon(Icons.info_outline,
-                  size: 50, color: Colors.red),
-              title: Text('Coronavirus (COVID-19) Pandemie',
+              leading: Icon(LineAwesomeIcons.alternate_user,
+                  size: 50,
+                  color: Colors.green  ),
+              title: Text('Willkommen!',
                 style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              subtitle: Text('Wichtige Informationen',
+              subtitle: Text('Wir begrüßen Sie in der offiziellen App des zfp!',
                   style: TextStyle(
                       fontSize: 15.0
                   )),
             ),
             ButtonBar(
               children: <Widget> [
-                FlatButton(
-                  child: Text(
-                      'Weiterlesen'
-                  ),
-                  onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => CoronaVirus()))},
-                ),
               ],
             )
           ],

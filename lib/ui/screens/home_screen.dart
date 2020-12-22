@@ -3,12 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:pzn_app/ui/screens/pzn_offers.dart';
 import 'package:pzn_app/ui/screens/pzn_wiesloch.dart';
 import 'package:pzn_app/ui/widgets/corona_alert-item.dart';
+import 'package:pzn_app/ui/widgets/welcome_Item.dart';
 
 import 'hospitals.dart';
 
 
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,6 +24,7 @@ class HomePage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 4.0),
           ),
+          WelcomeItem(),
           AlertItem(), //item.dart für Posts wie Bilder etc
           Padding(
             padding: const EdgeInsets.all(10.0),

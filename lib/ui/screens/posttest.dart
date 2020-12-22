@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_html/flutter_html.dart';
 import 'package:flutter_wordpress/flutter_wordpress.dart' as wp;
+import 'package:pzn_app/ui/widgets/dev_message.dart';
 import 'package:url_launcher/url_launcher.dart';
-
-import 'details_page.dart';
 
 class LandingPage extends StatelessWidget {
 
@@ -50,6 +48,7 @@ class LandingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        child: DevMessageItem(),
       ),
     );
   }}
