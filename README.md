@@ -1,4 +1,4 @@
-# pzn_app
+# PZN App
 
 App for PZN Wiesloch
 
