@@ -22,18 +22,23 @@ class NavDrawer extends StatelessWidget {
                     image: AssetImage('assets/pzn_wiesloch_zentralgebaeude.jpg'))),
           ),
           ListTile(
-            leading: Icon(Icons.info_outline, size: 27,),
+            leading: Icon(Icons.info_outline, size: 27, color: Colors.red,),
             title: Text('Corona-Virus', style: TextStyle(fontSize: 19),),
             onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => CoronaVirus()))},
           ),
           ListTile(
-            leading: Icon(Icons.location_on, size: 27,),
+            leading: Icon(Icons.location_on, size: 27, color: Colors.yellow[600],),
             title: Text('Gelände', style: TextStyle(fontSize: 19),),
             onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Area()))},
           ),
           ListTile(
-            leading: Icon(Icons.phone, size: 27,),
+            leading: Icon(Icons.phone, size: 27, color: Colors.yellow[600],),
             title: Text('Kontakt', style: TextStyle(fontSize: 19),),
+            onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Contact()))},
+          ),
+          ListTile(
+            leading: Icon(Icons.info_outline, size: 27, color: Colors.green,),
+            title: Text('App Info', style: TextStyle(fontSize: 19),),
             onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Contact()))},
           ),
         ],

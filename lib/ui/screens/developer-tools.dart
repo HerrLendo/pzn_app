@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pzn_app/ui/screens/posts.dart';
 
-import 'file:///C:/Users/busin/AndroidStudioProjects/pzn_app/lib/ui/screens/posts.dart';
 
 class Developer extends StatelessWidget {
   @override
