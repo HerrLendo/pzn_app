@@ -7,7 +7,7 @@ class AlertItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Card(
-        elevation: 10,
+        elevation: 5,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget> [

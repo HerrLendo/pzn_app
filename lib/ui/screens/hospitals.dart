@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Hospitals extends StatelessWidget {
   @override
@@ -20,6 +21,52 @@ class Hospitals extends StatelessWidget {
       ),
       body: HospitalPage(),
     );
+  }
+}
+
+
+_launchURLWiesloch() async {
+  const url = 'https://www.pzn-wiesloch.de';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+_launchURLBruchsal() async {
+  const url = 'https://www.pzn-wiesloch.de/standorte/bruchsal/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+_launchURLMosbach() async {
+  const url = 'https://www.pzn-wiesloch.de/standorte/mosbach/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+_launchURLSchwetzingen() async {
+  const url = 'https://www.pzn-wiesloch.de/standorte/schwetzingen/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+_launchURLWeinheim() async {
+  const url = 'https://www.pzn-wiesloch.de/standorte/weinheim/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }
 
@@ -82,7 +129,7 @@ class HospitalPage extends StatelessWidget {
                 color: Colors.grey[900],
                 elevation: 5,
                 child: InkWell(
-                  onTap: () => {},
+                  onTap: _launchURLWiesloch,
                   child: Center(
                     child: Column(
                       children: [
@@ -128,7 +175,7 @@ class HospitalPage extends StatelessWidget {
                 color: Colors.grey[900],
                 elevation: 5,
                 child: InkWell(
-                  onTap: () => {},
+                  onTap: _launchURLBruchsal,
                   child: Center(
                     child: Column(
                       children: [
@@ -170,7 +217,7 @@ class HospitalPage extends StatelessWidget {
                 color: Colors.grey[900],
                 elevation: 5,
                 child: InkWell(
-                  onTap: () => {},
+                  onTap: _launchURLMosbach,
                   child: Center(
                     child: Column(
                       children: [
@@ -212,7 +259,7 @@ class HospitalPage extends StatelessWidget {
                 color: Colors.grey[900],
                 elevation: 5,
                 child: InkWell(
-                  onTap: () => {},
+                  onTap: _launchURLSchwetzingen,
                   child: Center(
                     child: Column(
                       children: [
@@ -254,7 +301,7 @@ class HospitalPage extends StatelessWidget {
                 color: Colors.grey[900],
                 elevation: 5,
                 child: InkWell(
-                  onTap: () => {},
+                  onTap: _launchURLWeinheim,
                   child: Center(
                     child: Column(
                       children: [

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class pzn_offers extends StatelessWidget {
   @override
@@ -23,6 +24,59 @@ class pzn_offers extends StatelessWidget {
   }
 }
 
+_launchURLBehandeln() async {
+  const url = 'https://www.pzn-wiesloch.de/angebote/behandeln/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+_launchURLPflegen() async {
+  const url = 'https://www.pzn-wiesloch.de/angebote/pflegen/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+_launchURLBegleiten() async {
+  const url = 'https://www.pzn-wiesloch.de/angebote/begleiten/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+_launchURLInformieren() async {
+  const url = 'https://www.pzn-wiesloch.de/unser-zentrum/presse/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+_launchURLService() async {
+  const url = 'https://www.pzn-wiesloch.de/angebote/service-komfort/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+_launchURLWohnen() async {
+  const url = 'https://www.pzn-wiesloch.de/angebote/wohnen/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
 
 class pzn_offers_page extends StatelessWidget {
   @override
@@ -84,7 +138,7 @@ class pzn_offers_page extends StatelessWidget {
                 color: Colors.grey[900],
                 elevation: 5,
                 child: InkWell(
-                  onTap: () => {},
+                  onTap: _launchURLBehandeln,
                   child: Center(
                     child: Column(
                       children: [
@@ -133,7 +187,7 @@ class pzn_offers_page extends StatelessWidget {
                 color: Colors.grey[900],
                 elevation: 5,
                 child: InkWell(
-                  onTap: () => {},
+                  onTap: _launchURLPflegen,
                   child: Center(
                     child: Column(
                       children: [
@@ -182,7 +236,7 @@ class pzn_offers_page extends StatelessWidget {
                 color: Colors.grey[900],
                 elevation: 5,
                 child: InkWell(
-                  onTap: () => {},
+                  onTap: _launchURLBegleiten,
                   child: Center(
                     child: Column(
                       children: [
@@ -231,7 +285,7 @@ class pzn_offers_page extends StatelessWidget {
                 color: Colors.grey[900],
                 elevation: 5,
                 child: InkWell(
-                  onTap: () => {},
+                  onTap: _launchURLInformieren,
                   child: Center(
                     child: Column(
                       children: [
@@ -280,7 +334,7 @@ class pzn_offers_page extends StatelessWidget {
                 color: Colors.grey[900],
                 elevation: 5,
                 child: InkWell(
-                  onTap: () => {},
+                  onTap: _launchURLService,
                   child: Center(
                     child: Column(
                       children: [
@@ -329,7 +383,7 @@ class pzn_offers_page extends StatelessWidget {
                 color: Colors.grey[900],
                 elevation: 5,
                 child: InkWell(
-                  onTap: () => {},
+                  onTap: _launchURLWohnen,
                   child: Center(
                     child: Column(
                       children: [

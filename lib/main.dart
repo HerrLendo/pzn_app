@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:gradient_app_bar/gradient_app_bar.dart';
 import 'package:pzn_app/ui/screens/home_screen.dart';
 import 'package:pzn_app/ui/screens/posttest.dart';
+import 'package:pzn_app/ui/screens/splashscreen.dart';
 import 'package:pzn_app/ui/widgets/NavDrawer.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
@@ -12,7 +13,7 @@ import 'package:rflutter_alert/rflutter_alert.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(MyApp());
+  runApp(Splashscreen());
 }
 
 class MessageHandler extends StatefulWidget {

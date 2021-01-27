@@ -92,7 +92,7 @@ class ContactPage extends StatelessWidget {
                                       Icon(Icons.arrow_forward_ios_sharp, color: Colors.green ),
                                       FlatButton(
                                         onPressed: () => {},
-                                        child: Text('Adresse: Heidelberger Str. 1 · 69168 Wiesloch', style: TextStyle(
+                                        child: Text('Adresse: Heidelberger Str. 1 69168 Wiesloch', style: TextStyle(
                                           color: Colors.black,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 15,
