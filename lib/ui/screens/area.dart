@@ -16,16 +16,6 @@ class Area extends StatelessWidget {
           ),
         ),
         actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.search),
-            color: Colors.white,
-            onPressed: (){},
-          ),
-          IconButton(
-            icon: Icon(Icons.more_vert),
-            color: Colors.white,
-            onPressed: (){},
-          ),
         ],
       ),
       body: AreaPage(),
@@ -37,30 +27,17 @@ class AreaPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        scrollDirection: Axis.vertical,
-        children: <Widget>[
-          ClipRRect(
-            borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(40.0),
-                bottomRight: Radius.circular(40.0)
-            ),
-            child: Container(
-              height: 100,
-              decoration: BoxDecoration(
-                  color: Colors.yellow[700]
-              ),
-              child: Center(
-                  child: Text('Gelände', style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 40
-                  ),)
-              ),
-            ),
+      body: Center(
+        child: InteractiveViewer(
+          boundaryMargin: EdgeInsets.all(0.0),
+          minScale: 0.1,
+          maxScale: 20.0,
+          scaleEnabled: true,
+          child:Image.asset(
+            'assets/lageplan.png', scale: 1, fit: BoxFit.cover, height: double.maxFinite, width: double.infinity,
           ),
-        ],
-      ),
+        ),
+      )
     );
   }
 }

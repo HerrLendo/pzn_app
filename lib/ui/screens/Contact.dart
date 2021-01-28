@@ -21,11 +21,6 @@ class _ContactState extends State<Contact> {
           ),
         ),
         actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.more_vert),
-            color: Colors.white,
-            onPressed: (){},
-          ),
         ],
       ),
       body: ContactPage(),
@@ -89,7 +84,7 @@ class ContactPage extends StatelessWidget {
                                 children: <Widget>[
                                   ButtonBar(
                                     children: <Widget>[
-                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green ),
+                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green, size: 12, ),
                                       FlatButton(
                                         onPressed: () => {},
                                         child: Text('Adresse: Heidelberger Str. 1 69168 Wiesloch', style: TextStyle(
@@ -113,7 +108,7 @@ class ContactPage extends StatelessWidget {
                                 children: <Widget>[
                                   ButtonBar(
                                     children: <Widget>[
-                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green ),
+                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green, size: 12, ),
                                       FlatButton(
                                         onPressed: () => {},
                                         child: Text('Telefon: 06222 550', style: TextStyle(
@@ -137,7 +132,7 @@ class ContactPage extends StatelessWidget {
                                 children: <Widget>[
                                   ButtonBar(
                                     children: <Widget>[
-                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green ),
+                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green, size: 12, ),
                                       FlatButton(
                                         onPressed: () => {},
                                         child: Text('Webseite: www.pzn-wiesloch.de', style: TextStyle(
@@ -181,7 +176,7 @@ class ContactPage extends StatelessWidget {
                                 children: <Widget>[
                                   ButtonBar(
                                     children: <Widget>[
-                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green ),
+                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green, size: 12, ),
                                       FlatButton(
                                         onPressed: () => {},
                                         child: Text('Webseite: www.faithlux.eu', style: TextStyle(
@@ -205,7 +200,7 @@ class ContactPage extends StatelessWidget {
                                 children: <Widget>[
                                   ButtonBar(
                                     children: <Widget>[
-                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green ),
+                                      Icon(Icons.arrow_forward_ios_sharp, color: Colors.green, size: 12, ),
                                       FlatButton(
                                         onPressed: () => {},
                                         child: Text('E-Mail: info@faithlux.eu', style: TextStyle(
@@ -229,7 +224,7 @@ class ContactPage extends StatelessWidget {
                               children: <Widget>[
                                 ButtonBar(
                                   children: <Widget>[
-                                    Icon(Icons.arrow_forward_ios_sharp, color: Colors.green ),
+                                    Icon(Icons.arrow_forward_ios_sharp, color: Colors.green, size: 12,),
                                     FlatButton(
                                       onPressed: () => {},
                                       child: Text('Vertreten durch: Luca-Paul Siemers', style: TextStyle(
